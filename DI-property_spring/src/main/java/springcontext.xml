@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="sobj" class="com.edu.Student">
+        <!-- Setting properties using setter methods -->
+        <property name="sname" value="Lakshmi"></property>
+        <property name="sage" value="23"></property>
+        <property name="sfees" value="657.2"></property>
+    </bean>
+</beans>
