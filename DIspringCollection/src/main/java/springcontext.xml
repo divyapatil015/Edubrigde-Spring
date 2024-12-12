@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="studentobj" class="com.edu.Student">
+<property name= "sid" value="12"></property>
+<property name = "sname" value="Divya"></property>
+<property name="phones" >
+<set>
+<value>7879338580</value>
+<value>4837534875</value>
+<value>4483534875</value>
+<value>9604488765</value>
+</set>
+</property>
+
+<property name="address">
+<list>
+<value>Pune</value>
+<value>Bangalore</value>
+<value>Chennai</value>
+</list>
+</property>
+
+<property name="course">
+<map>
+<entry key="J01" value="Java"></entry>
+<entry key="p21" value="Python"></entry>
+<entry key="Or45" value="Oracle"></entry>
+</map>
+</property>
+</bean>
+</beans>

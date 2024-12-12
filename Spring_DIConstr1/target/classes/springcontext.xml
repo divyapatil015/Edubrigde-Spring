@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="employeeobj" class="com.edu.Employee" >
+ <constructor-arg value="123"></constructor-arg>
+ <constructor-arg value="Divya"></constructor-arg>
+ <constructor-arg value="345.64"></constructor-arg>
+</bean>
+
+<bean id="employeeobj1" class="com.edu.Employee" >
+ <constructor-arg value="131"></constructor-arg>
+ <constructor-arg value="Dheeraj"></constructor-arg>
+ <constructor-arg value="3454.64"></constructor-arg>
+</bean>
+<!-- Setter DI -->
+<bean id="employeeobj2" class ="com.edu.Employee">
+<property name="empid" value="4567"></property>
+<property name="empname" value="Taukir"></property>
+<property name="empsalary" value="4565"></property>
+</bean>
+</beans>
